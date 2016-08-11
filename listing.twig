@@ -1,0 +1,54 @@
+{{ include('partials/_head.twig') }}
+
+<h1 class="page-title">The Radical Worker</h1>
+
+<div id="featured-post">
+    {% setcontent featured = 'entries' where {'tags': 'featured'} returnsingle %}
+    <div class="left-col">
+        <img src="{{ featured.image | thumbnail(1000, 1000) }}" alt="{{ featured.title }}">
+    </div>
+
+    <div class="right-col">
+        <h2>{{ featured.title }}</h2>
+        <h3>{{ featured.user.displayname }} - {{ featured.datepublish | date('j F, Y') }}</h3>
+        {{ featured.teaser }}
+        <a href="{{ featured.link }}">Continue Reading</a>
+    </div>
+</div>
+
+<div id="posts">
+    {% setcontent entries = 'entries' %}
+
+    <div id="latest">
+        {% set i = 1 %}
+
+        {% for entry in entries if entry.slug != featured.slug %}
+            {% if i <= 3 %}
+                {% set i = i + 1 %}
+
+                <div class="recent-entry">
+                    {% if entry.image is defined %}
+                        <img src="{{ entry.image | thumbnail(1000, 1000) }}" alt="{{ entry.title }}">
+                    {% endif %}
+                    <h2>{{ entry.title }}</h2>
+                    <h3>{{ entry.user.displayname }} - {{ entry.datepublish | date('j F, Y') }}</h3>
+                    {{ entry.teaser }}
+                    <a href="{{ entry.link }}">Continue Reading</a>
+                </div>
+            {% else %}
+                <div class="entry">
+                    <h2>{{ entry.title}}</h2>
+                    <h3>{{ entry.user.displayname }} - {{ entry.datepublish | date('j F, Y') }}</h3>
+                    {% if entry.image is defined %}
+                        <img src="{{ entry.image | thumbnail(1000, 1000) }}" alt="{{ enry.title }}">
+                    {% endif %}
+                    {{ entry.teaser }}
+                    <a href="{{ entry.link }}">Continue Reading</a>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+{{ include('partials/_foot.twig') }}
+

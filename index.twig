@@ -1,0 +1,37 @@
+{{ include('partials/_head.twig') }}
+
+<div id="hero">
+	<h1>Des Moines Workers' Alliance</h1>   
+</div>
+
+<div id="aims">
+	<div class="companion-image">
+	</div>
+
+	<div class="aim-list">
+		<h2>Aims</h2>
+		<ol>
+			<li>Maecenas faucibus mollis interdum.</li>
+			<li>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+			<li>Nulla vitae elit libero, a pharetra augue.</li>
+			<li>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</li>
+		</ol>
+	</div>
+</div>
+
+<div id="projects">
+	{% setcontent projects = 'projects' %}
+
+	{% for project in projects %}
+		<div class="project">
+			<h3>{{ project.title }}</h3>
+			<p class="teaser">{{ project.teaser }}</p>
+			<a href="{{project.slug}}">More Info</a>
+		</div>
+	{% endfor %}
+</div>
+
+
+{{ include('partials/_foot.twig') }}

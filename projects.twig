@@ -1,0 +1,28 @@
+{{ include('partials/_head.twig') }}
+
+<h1 class="page-title">{{ record.title }}</h1>
+
+<div class="page-body">
+	{{ record.body }}
+</div>
+
+{% setcontent projects = 'projects' %}
+{{ dump(projects) }}
+
+<div id="project-list">
+	{% for project in projects %}
+		<div class="project">
+			<div class="project-image">
+				<img src="{{ project.image | thumbnail(1000, 1000) }}" alt="{{ project.title }}">
+			</div>
+
+			<div class="project-info">
+				<h2>{{ project.title }}</h2>
+				{{ project.teaser }}
+				<a href="{{ project.link }}">More Info</a>
+			</div>
+		</div>
+	{% endfor %}
+</div>
+
+{{ include('partials/_foot.twig') }}
