@@ -74,6 +74,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 84%;
+  max-width: 840px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
@@ -103,6 +104,39 @@
       #projects .project a:hover {
         text-decoration: underline;
         color: #0b8ad9; }
+
+#page-footer {
+  background-color: #4F4F4F;
+  margin-top: 60px;
+  padding-top: 30px; }
+  #page-footer .container {
+    max-width: 840px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; }
+    #page-footer .container a {
+      color: white; }
+    #page-footer .container .left, #page-footer .container .right {
+      width: 20.71429%; }
+    #page-footer .container .center {
+      width: 53.33333%; }
+    #page-footer .container .left, #page-footer .container .center, #page-footer .container .right {
+      margin-left: 0.71429%;
+      margin-right: 0.71429%;
+      font-family: "League Gothic";
+      font-weight: 100;
+      font-size: 16px;
+      color: white; }
+      #page-footer .container .left h4, #page-footer .container .center h4, #page-footer .container .right h4 {
+        font-weight: 100; }
+    #page-footer .container .left address {
+      font-style: normal; }
+    #page-footer .container .center {
+      text-align: center; }
+    #page-footer .container .right {
+      text-align: right; }
+      #page-footer .container .right ul {
+        list-style: none; }
 
 * {
   margin: 0;

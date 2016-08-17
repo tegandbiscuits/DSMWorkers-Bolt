@@ -1,0 +1,54 @@
+#page-footer {
+	background-color: $grey;
+	margin-top: 60px;
+	padding-top: 30px;
+
+	.container {
+		max-width: 840px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+
+		a {
+			color: white;
+		}
+
+		.left, .right {
+			width: percentage(174/840);
+		}
+
+		.center {
+			width: percentage(448/840);
+		}
+
+		.left, .center, .right {
+			margin-left: percentage(6/840);
+			margin-right: percentage(6/840);
+			font-family: $sans-font;
+			font-weight: 100;
+			font-size: 16px;
+			color: white;
+			h4 {
+				font-weight: 100;
+			}
+		}
+
+		.left {
+			address {
+				font-style: normal;
+			}
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.right {
+			text-align: right;
+
+			ul {
+				list-style: none;
+			}
+		}
+	}
+}

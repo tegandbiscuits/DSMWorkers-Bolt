@@ -1,21 +1,23 @@
-	<footer>
-		<div id="left">
-			<address>
-				dsmworkers@riseup.net<br>
-				(515) 505-3242<br>
-			</address>
-			<span class="social">
-				<a href="#">Facebook</a>
-				<a href="#">Twitter</a>
-			</span>
-		</div>
+	<footer id="page-footer">
+		<div class="container">
+			<div class="left">
+				<address>
+					dsmworkers@riseup.net<br>
+					(515) 505-3242<br>
+				</address>
+				<span class="social">
+					<a href="#">Facebook</a>
+					<a href="#">Twitter</a>
+				</span>
+			</div>
 
-		<div id="center">
-			<h4>{{ app.config.get('general/payoff') }}</h4>
-		</div>
+			<div class="center">
+				<h4>{{ app.config.get('general/payoff') }}</h4>
+			</div>
 
-		<div id="right">
-			{{ menu('main', 'partials/_menu.twig') }}
+			<div class="right">
+				{{ menu('main', 'partials/_menu.twig') }}
+			</div>
 		</div>
 	</footer>
 </body>
