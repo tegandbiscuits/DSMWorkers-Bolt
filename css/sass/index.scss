@@ -1,0 +1,85 @@
+#hero {
+    text-align: center;
+    height: 30vw; //(100/1280)*384px
+    background-image: url(/theme/dsmworkers/css/Des-Moines-Hero.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    img {
+        width: 21vw;
+        margin-top: 1.5625vw;
+        margin-bottom: 1.5625vw;
+    }
+
+    h1 {
+        color: $hero-font-color;
+        font-size: 6.5vw; //~((100/1280)*70) + 1
+    }
+}
+
+#aims {
+    width: 100%;
+    margin-top: 40px;
+    display: table;
+
+    .aim-image {
+        width: percentage(448/1000);
+        display: table-cell;
+        background-image: url(/theme/dsmworkers/css/Evictions-March.jpg);
+        background-size: cover;
+        background-position: 50% 25%;
+        background-repeat: no-repeat;
+    }
+
+    .aim-list {
+        width: percentage(552/1000);
+        display: table-cell;
+        background-color: $red;
+        padding: 12px;
+        
+        h2 {
+            margin-bottom: 8px;
+            color: black;
+        }
+
+        ol {
+            padding-left: 16px;
+            color: white;
+            font-family: $serif-font;
+            font-size: 14px;
+            
+            li {
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+#projects {
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	width: percentage(840/1000);
+	max-width: 840px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	.project {
+		width: percentage(264/840);
+		margin-left: percentage(6/840);
+		margin-right: percentage(6/840);
+
+		img {
+			width: 100%;
+		}
+
+		a {
+			display: block;
+			margin-top: 8px;
+			text-align: right;
+		}
+	}
+}
+
+

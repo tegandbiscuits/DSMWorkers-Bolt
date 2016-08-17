@@ -16,13 +16,15 @@
 			margin-left: percentage(50/1000);
 			margin-right: percentage(50/1000);
 			font-family: $sans-font;
-			font-size: 24px;
 			line-height: 60px;
 
 			a {
 				text-decoration: none;
 				display: block;
 				color: $menu-font-color;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 100;
 
 				&:hover {
 					background-color: darken($menu-background, 8);

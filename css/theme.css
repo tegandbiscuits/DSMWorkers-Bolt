@@ -1,3 +1,42 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "League Gothic";
+  font-weight: 100; }
+
+h1 {
+  font-size: 38px; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 19px; }
+
+h5 {
+  font-size: 15px; }
+
+h6 {
+  font-size: 12px; }
+
+p {
+  font-family: "Libre Baskerville";
+  font-size: 14px; }
+  p a {
+    font-family: "Libre Baskerville"; }
+
+a {
+  font-family: "League Gothic";
+  font-size: 14px;
+  font-weight: 100;
+  font-style: italic;
+  color: #0971B2;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline;
+    color: #0b8ad9; }
+
 #menu {
   width: 100%;
   background: #E6E7E8; }
@@ -14,19 +53,20 @@
       margin-left: 5%;
       margin-right: 5%;
       font-family: "League Gothic";
-      font-size: 24px;
       line-height: 60px; }
       #menu ul li a {
         text-decoration: none;
         display: block;
-        color: black; }
+        color: black;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 100; }
         #menu ul li a:hover {
           background-color: #d1d3d4; }
 
 #hero {
   text-align: center;
   height: 30vw;
-  background-color: black;
   background-image: url(/theme/dsmworkers/css/Des-Moines-Hero.png);
   background-size: 100% auto;
   background-repeat: no-repeat; }
@@ -36,7 +76,6 @@
     margin-bottom: 1.5625vw; }
   #hero h1 {
     color: white;
-    font-family: "League Gothic";
     font-size: 6.5vw; }
 
 #aims {
@@ -48,7 +87,7 @@
     display: table-cell;
     background-image: url(/theme/dsmworkers/css/Evictions-March.jpg);
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 50% 25%;
     background-repeat: no-repeat; }
   #aims .aim-list {
     width: 55.2%;
@@ -57,10 +96,7 @@
     padding: 12px; }
     #aims .aim-list h2 {
       margin-bottom: 8px;
-      color: black;
-      font-family: "League Gothic";
-      font-size: 24px;
-      font-weight: 100; }
+      color: black; }
     #aims .aim-list ol {
       padding-left: 16px;
       color: white;
@@ -84,26 +120,10 @@
     margin-right: 0.71429%; }
     #projects .project img {
       width: 100%; }
-    #projects .project h3 {
-      font-family: "League Gothic";
-      font-size: 24px;
-      font-weight: 100; }
-    #projects .project p {
-      font-family: "Libre Baskerville";
-      font-size: 14px; }
     #projects .project a {
       display: block;
       margin-top: 8px;
-      font-family: "League Gothic";
-      font-size: 14px;
-      font-weight: 100;
-      font-style: italic;
-      color: #0971B2;
-      text-decoration: none;
       text-align: right; }
-      #projects .project a:hover {
-        text-decoration: underline;
-        color: #0b8ad9; }
 
 #page-footer {
   background-color: #4F4F4F;
