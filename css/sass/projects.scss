@@ -1,0 +1,59 @@
+#project-list {
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	width: percentage(816/1000);
+	max-width: 816px;
+
+	.project {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 30px;
+
+		.project-image {
+			width: percentage(408/816);
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.project-info {
+			width: percentage(356/816);
+
+			a {
+				display: block;
+				margin-top: 8px;
+				text-align: right;
+			}
+		}
+	}
+}
+
+.single-project {
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	width: percentage(816/1000);
+	max-width: 816px;
+	display: flex;
+	justify-content: space-between;
+
+	.left-col {
+		width: percentage(408/816);
+
+		img {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+
+	.right-col {
+		width: percentage(356/816);
+
+		.page-title {
+			margin-top: 0;
+			text-align: left;
+		}
+	}
+}

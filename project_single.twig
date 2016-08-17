@@ -1,19 +1,19 @@
 {{ include('partials/_head.twig') }}
 
-<h1 class="page-title">{{ record.title }}</h1>
+<div class="single-project">
+    <div class="left-col">
+        <img src="{{ record.image | thumbnail(1000, 1000) }}" alt="{{ record.title }}">
 
-<div class="left-col">
-    <img src="{{ record.image | thumbnail(1000, 1000) }}" alt="{{ record.title }}">
-
-    <div class="share">
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
+        <div class="share">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
     </div>
-</div>
 
-<div class="right-col">
-    <h1>{{ record.title }}</h1>
-    {{ record.body }}
+    <div class="right-col">
+        <h1 class="page-title">{{ record.title }}</h1>
+        {{ record.body }}
+    </div>
 </div>
 
 {{ include('partials/_foot.twig') }}
