@@ -1,0 +1,18 @@
+.page-body {
+	max-width: 1000px;
+	width: percentage(816/1000);
+	margin-left: auto;
+	margin-right: auto;
+
+	dl {
+		margin-top: 20px;
+
+		dt {
+			font-weight: 600;
+		}
+
+		dd {
+			margin-left: 20px;
+		}
+	}
+}

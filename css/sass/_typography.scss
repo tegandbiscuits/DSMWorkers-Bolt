@@ -30,6 +30,7 @@ h6 {
 p {
 	font-family: $serif-font;
 	font-size: 14px;
+	text-align: justify;
 	
 	a {
 		font-family: $serif-font;
@@ -49,3 +50,22 @@ a {
 		color: lighten($blue, 8);
 	}
 }
+
+li {
+	font-family: $serif-font;
+	font-size: 14px;
+	text-align: justify;
+}
+
+dl {
+	font-family: $serif-font;
+	font-size: 14px;
+	text-align: justify;
+}
+
+.page-title {
+	margin-top: 50px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
