@@ -1,0 +1,81 @@
+#menu {
+  width: 100%;
+  background: #E6E7E8; }
+  #menu ul {
+    list-style: none;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+    #menu ul li {
+      display: inline-block;
+      width: 8%;
+      height: 60px;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-family: "League Gothic";
+      font-size: 24px;
+      line-height: 60px; }
+      #menu ul li a {
+        text-decoration: none;
+        display: block;
+        color: black; }
+        #menu ul li a:hover {
+          background-color: #cbced0; }
+
+#hero {
+  text-align: center;
+  height: 30vw;
+  background-color: black;
+  background-image: url(/theme/dsmworkers/css/Des-Moines-Hero.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+  #hero img {
+    width: 21vw;
+    margin-top: 1.5625vw;
+    margin-bottom: 1.5625vw; }
+  #hero h1 {
+    color: white;
+    font-family: "League Gothic";
+    font-size: 6.5vw; }
+
+#aims {
+  width: 100%;
+  margin-top: 40px;
+  display: table; }
+  #aims .aim-image {
+    width: 44.8%;
+    display: table-cell;
+    background-image: url(/theme/dsmworkers/css/Evictions-March.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; }
+  #aims .aim-list {
+    width: 55.2%;
+    display: table-cell;
+    background-color: #A33E3E;
+    padding: 12px; }
+    #aims .aim-list h2 {
+      margin-bottom: 8px;
+      color: black;
+      font-family: "League Gothic";
+      font-size: 24px;
+      font-weight: 100; }
+    #aims .aim-list ol {
+      padding-left: 16px;
+      color: white;
+      font-family: "Libre Baskerville";
+      font-size: 14px; }
+      #aims .aim-list ol li {
+        line-height: 28px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/*# sourceMappingURL=theme.css.map */

@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>{{ app.config.get('general/sitename') }}</title>
+
+    <link rel="stylesheet" href="{{ paths.theme }}css/theme.css">
 </head>
 <body>
-    <div id="menu">
+    <header id="menu">
         {{ menu('main', 'partials/_menu.twig') }}
-    </div>
+    </header>
  
