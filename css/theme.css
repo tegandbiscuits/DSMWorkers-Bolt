@@ -41,7 +41,8 @@ a {
 li {
   font-family: "Libre Baskerville";
   font-size: 14px;
-  text-align: justify; }
+  text-align: justify;
+  margin-left: 16px; }
 
 dl {
   font-family: "Libre Baskerville";
@@ -151,6 +152,18 @@ dl {
       font-weight: 600; }
     .page-body dl dd {
       margin-left: 20px; }
+  .page-body ol {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .page-body ol li {
+      margin-top: 15px; }
+      .page-body ol li ol {
+        margin-top: 0; }
+        .page-body ol li ol li {
+          margin-top: 0;
+          list-style: none; }
+          .page-body ol li ol li:before {
+            content: "- "; }
 
 #page-footer {
   background-color: #4F4F4F;
