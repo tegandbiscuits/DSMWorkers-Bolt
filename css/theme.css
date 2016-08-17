@@ -21,7 +21,7 @@
         display: block;
         color: black; }
         #menu ul li a:hover {
-          background-color: #cbced0; }
+          background-color: #d1d3d4; }
 
 #hero {
   text-align: center;
@@ -68,6 +68,41 @@
       font-size: 14px; }
       #aims .aim-list ol li {
         line-height: 28px; }
+
+#projects {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 84%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #projects .project {
+    width: 31.42857%;
+    margin-left: 0.71429%;
+    margin-right: 0.71429%; }
+    #projects .project img {
+      width: 100%; }
+    #projects .project h3 {
+      font-family: "League Gothic";
+      font-size: 24px;
+      font-weight: 100; }
+    #projects .project p {
+      font-family: "Libre Baskerville";
+      font-size: 14px; }
+    #projects .project a {
+      display: block;
+      margin-top: 8px;
+      font-family: "League Gothic";
+      font-size: 14px;
+      font-weight: 100;
+      font-style: italic;
+      color: #0971B2;
+      text-decoration: none;
+      text-align: right; }
+      #projects .project a:hover {
+        text-decoration: underline;
+        color: #0b8ad9; }
 
 * {
   margin: 0;

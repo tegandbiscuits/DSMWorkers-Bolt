@@ -28,9 +28,10 @@
 
 	{% for project in projects %}
 		<div class="project">
+			<img src="{{ project.image | thumbnail(1000, 1000) }}" alt="{{ project.title }}">
 			<h3>{{ project.title }}</h3>
 			<p class="teaser">{{ project.teaser }}</p>
-			<a href="{{project.slug}}">More Info</a>
+			<a href="{{project.link}}">More Info</a>
 		</div>
 	{% endfor %}
 </div>
