@@ -1,31 +1,29 @@
 {{ include('partials/_head.twig') }}
 
-{% dump(record) %}
 <div class="byline">
   <h1 class="page-title">{{ record.title }}</h1>
   <h2>{{ record.user.displayname }} - {{ record.datepublish | date('j F, Y') }}</h2>
 </div>
 
-<div id="post-content">
-  {% if image is defined %}
+<div id="post-content" class="page-body">
+  {% if record.image is not empty%}
     <img src="{{ record.image | thumbnail(1000, 1000) }}" alt="{{ record.title }}">
   {% endif %}
 
   {{ record.body }}
 </div>
 
-<div id="post-footer">
+<footer id="post-footer">
   <div class="share">
     <a href="#">Facebook</a>
     <a href="#">Twitter</a>
   </div>
 
-  <h3 class="src-only">Tags</h3>
   <ul>
     {% for tag in record.taxonomy.tags %}
       <li>{{ tag }}</li>
     {% endfor %}
   </ul>
-</div>
+</footer>
 
 {{ include('partials/_foot.twig') }}
