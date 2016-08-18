@@ -11,3 +11,8 @@
 * Set one of the font families as the default font
 * Get footer social icons
 * Make footer link not linky
+* Figure all the types that can be entered for a post, and add 25px margin to their blocks;
+* Add writing for radical worker info
+* Style pagination
+* Make tags clickable to search for that tag
+* 404 page that says 'A spectre is haunting Des Moines. But that spectre is not here.'
