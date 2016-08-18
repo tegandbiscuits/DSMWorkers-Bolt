@@ -23,11 +23,11 @@
 	</div>
 </div>
 
-<div id="projects">
+<div id="projects" class="three-item-container">
 	{% setcontent projects = 'projects' %}
 
 	{% for project in projects %}
-		<div class="project">
+		<div class="item">
 			<img src="{{ project.image | thumbnail(1000, 1000) }}" alt="{{ project.title }}">
 			<h2>{{ project.title }}</h2>
 			<p class="teaser">{{ project.teaser }}</p>

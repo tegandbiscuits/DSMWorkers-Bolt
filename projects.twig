@@ -10,15 +10,15 @@
 
 <div id="project-list">
 	{% for project in projects %}
-		<div class="project">
-			<div class="project-image">
+		<div class="two-column-container">
+			<div class="left-col">
 				<img src="{{ project.image | thumbnail(1000, 1000) }}" alt="{{ project.title }}">
 			</div>
 
-			<div class="project-info">
+			<div class="right-col">
 				<h2>{{ project.title }}</h2>
 				{{ project.teaser }}
-				<a href="{{ project.link }}">More Info</a>
+				<a href="{{ project.link }}" class="continue-link">More Info</a>
 			</div>
 		</div>
 	{% endfor %}
