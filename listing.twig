@@ -2,6 +2,9 @@
 
 <h1 class="page-title">The Radical Worker</h1>
 
+{% set page_num = app.request.get('page_entries') %}
+{% if page_num == null or page_num == '1' %}
+
 <div id="featured-post" class="two-column-container">
     {% setcontent featured = 'entries' where {'tags': 'featured'} returnsingle %}
 
@@ -56,7 +59,36 @@
     </div>
 </div>
 
-{{ pager('entries') }}
+{% else %}
+
+<div id="posts">
+    {% setcontent entries = 'entries/latest/8' allowpaging %}
+
+    <div class="post-list">
+        {% for entry in entries %}
+            <div class="post">
+                <h2>{{ entry.title }}</h2>
+                <h3>{{ entry.user.displayname }} - {{ entry.datepublish | date('j F, Y') }}</h3>
+
+                {% if entry.image is not empty %}
+                    <div class="post-excerpt image-excerpt">
+                        <img src="{{ entry.image | thumbnail(1000, 1000) }}" alt="{{ entry.title }}">
+                {% else %}
+                    <div class="post-excerpt">
+                {% endif %}
+                    <div class="excerpt-text">
+                        {{ entry.teaser }}
+                        <a href="{{ entry.link }}" class="post-link">Continue Reading</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endif %}
+
+{{ pager('entries', 3, 'partials/_sub_pager.twig') }}
 
 {{ include('partials/_foot.twig') }}
 

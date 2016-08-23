@@ -52,6 +52,35 @@
 	}
 }
 
+.pagination {
+	max-width: 816px;
+	width: percentage(816/1000);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 75px;
+	//display: flex;
+	//justify-content: space-between;
+
+	.prev {
+		float: left;
+	}
+
+	.next {
+		float: right;
+	}
+
+	a {
+		font-style: normal;
+		font-size: 19px;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
 .byline {
 	margin-bottom: 40px;
 

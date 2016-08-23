@@ -233,6 +233,24 @@ dl {
     .post-list .post .image-excerpt .excerpt-text {
       width: 77.45098%; }
 
+.pagination {
+  max-width: 816px;
+  width: 81.6%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px; }
+  .pagination .prev {
+    float: left; }
+  .pagination .next {
+    float: right; }
+  .pagination a {
+    font-style: normal;
+    font-size: 19px; }
+  .pagination:after {
+    content: "";
+    display: block;
+    clear: both; }
+
 .byline {
   margin-bottom: 40px; }
   .byline .page-title {

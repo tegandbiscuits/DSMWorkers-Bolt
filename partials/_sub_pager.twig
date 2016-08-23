@@ -1,0 +1,12 @@
+{% set link = pager.makelink() %}
+{% if pager.totalpages > 1 %}
+    <div class="pagination">
+        {% if pager.current > 1 %}
+            <a class="prev" href="{{link}}{{pager.current - 1}}">&lt; Previous</a>
+        {% endif %}
+
+        {% if pager.current < pager.totalpages %}
+            <a class="next" href="{{link}}{{pager.current + 1}}">Next &gt;</a>
+        {% endif %}
+    </div>
+{% endif %}
