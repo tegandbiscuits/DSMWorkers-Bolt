@@ -1,0 +1,102 @@
+{{ include('partials/_head.twig') }}
+
+<h1 class="page-title">The Radical Worker</h1>
+
+{% set page_num = app.request.get('page_entries') %}
+{% if page_num == null or page_num == '1' %}
+
+<div id="featured-post" class="two-column-container">
+    {% setcontent featured = 'entries' where {'tags': 'featured'} returnsingle %}
+
+    <div class="left-col">
+        <a href="{{ featured.link }}">
+            <img src="{{ featured.image | thumbnail(1000, 1000) }}" alt="{{ featured.title }}">
+        </a>
+    </div>
+
+    <div class="right-col">
+        <h2><a href="{{ featured.link }}">{{ featured.title }}</a></h2>
+        <h3>{{ featured.user.displayname }} - {{ featured.datepublish | date('j F, Y') }}</h3>
+        {{ featured.teaser }}
+        <a href="{{ featured.link }}" class="continue-link">Continue Reading</a>
+    </div>
+</div>
+
+<div id="posts">
+    {% setcontent entries = 'entries/latest/8' allowpaging %}
+
+    <div class="three-item-container">
+        {% for entry in entries | slice(0, 3) if entry.slug != featured.slug %}
+            <div class="item">
+                {% if entry.image is not empty %}
+                    <a href="{{ entry.link }}">
+                        <img src="{{ entry.image | thumbnail(1000, 1000) }}" alt="{{ entry.title }}">
+                    </a>
+                {% endif %}
+                <h2><a href="{{ entry.link }}">{{ entry.title }}</a></h2>
+                <h3>{{ entry.user.displayname }} - {{ entry.datepublish | date('j F, Y') }}</h3>
+                {{ entry.teaser }}
+                <a href="{{ entry.link }}" class="continue">Continue Reading</a>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="post-list">
+        {% for entry in entries | slice(3) if entry.slug != featured.slug %}
+            <div class="post">
+                <h2><a href="{{ entry.link }}">{{ entry.title }}</a></h2>
+                <h3>{{ entry.user.displayname }} - {{ entry.datepublish | date('j F, Y') }}</h3>
+
+                {% if entry.image is not empty %}
+                    <div class="post-excerpt image-excerpt">
+                        <a href="{{ entry.link }}" class="image-link">
+                            <img src="{{ entry.image | thumbnail(1000, 1000) }}" alt="{{ entry.title }}">
+                        </a>
+                {% else %}
+                    <div class="post-excerpt">
+                {% endif %}
+                    <div class="excerpt-text">
+                        {{ entry.teaser }}
+                        <a href="{{ entry.link }}" class="post-link">Continue Reading</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% else %}
+
+<div id="posts">
+    {% setcontent entries = 'entries/latest/8' allowpaging %}
+
+    <div class="post-list">
+        {% for entry in entries %}
+            <div class="post">
+                <h2><a href="{{ entry.link }}">{{ entry.title }}</a></h2>
+                <h3>{{ entry.user.displayname }} - {{ entry.datepublish | date('j F, Y') }}</h3>
+
+                {% if entry.image is not empty %}
+                    <div class="post-excerpt image-excerpt">
+                        <a href="{{ entry.link }}" class="image-link">
+                            <img src="{{ entry.image | thumbnail(1000, 1000) }}" alt="{{ entry.title }}">
+                        </a>
+                {% else %}
+                    <div class="post-excerpt">
+                {% endif %}
+                    <div class="excerpt-text">
+                        {{ entry.teaser }}
+                        <a href="{{ entry.link }}" class="post-link">Continue Reading</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endif %}
+
+{{ pager('entries', 3, 'partials/_sub_pager.twig') }}
+
+{{ include('partials/_foot.twig') }}
+
