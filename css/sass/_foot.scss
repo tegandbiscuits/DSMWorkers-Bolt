@@ -28,6 +28,7 @@
 			font-family: $sans-font;
 			font-weight: 100;
 			font-size: 16px;
+			line-height: 1.5em;
 			color: white;
 
 			h4 {
@@ -40,6 +41,19 @@
 			address {
 				font-style: normal;
 				font-size: 14px;
+			}
+
+			.social {
+				display: block;
+				margin-top: 5px;
+
+				.facebook {
+					margin-right: 5px;
+				}
+
+				.twitter {
+					margin-left: 5px;
+				}
 			}
 		}
 
