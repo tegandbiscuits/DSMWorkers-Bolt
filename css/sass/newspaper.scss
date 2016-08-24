@@ -85,6 +85,20 @@
 	}
 }
 
+.bottom-notes {
+	width: percentage(816/1000);
+	max-width: 816px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	font-style: italic;
+	color: $light-grey;
+
+	p {
+		text-align: center;
+	}
+}
+
 .post {
 	width: percentage(816/1000);
 	max-width: 816px;

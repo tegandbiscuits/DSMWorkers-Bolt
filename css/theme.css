@@ -259,6 +259,17 @@ dl {
     display: block;
     clear: both; }
 
+.bottom-notes {
+  width: 81.6%;
+  max-width: 816px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  font-style: italic;
+  color: #7F7F7F; }
+  .bottom-notes p {
+    text-align: center; }
+
 .post {
   width: 81.6%;
   max-width: 816px;

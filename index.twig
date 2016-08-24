@@ -11,15 +11,9 @@
 	</div>
 
 	<div class="aim-list">
+		{% setcontent aim_list = 'blocks/aim-list' %}
 		<h2>Aims</h2>
-		<ol>
-			<li>Maecenas faucibus mollis interdum.</li>
-			<li>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</li>
-			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-			<li>Nulla vitae elit libero, a pharetra augue.</li>
-			<li>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</li>
-		</ol>
+		{{ aim_list.content }}
 	</div>
 </div>
 

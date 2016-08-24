@@ -98,5 +98,10 @@
 
 {{ pager('entries', 3, 'partials/_sub_pager.twig') }}
 
+<div class="bottom-notes">
+    {% setcontent write_for_us = 'blocks/write-for-us' %}
+    {{ write_for_us.content }}
+</div>
+
 {{ include('partials/_foot.twig') }}
 
