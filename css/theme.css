@@ -298,6 +298,8 @@ dl {
       background-color: #E6E7E8;
       text-transform: capitalize;
       font-style: italic; }
+      #post-footer ul li a {
+        color: black; }
 
 #page-footer {
   background-color: #4F4F4F;

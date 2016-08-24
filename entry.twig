@@ -20,8 +20,10 @@
   </div>
 
   <ul>
-    {% for tag in record.taxonomy.tags %}
-      <li>{{ tag }}</li>
+    {% for tags in record.taxonomy %}
+      {% for link, tag in tags %}
+        <li><a href="{{ link }}">{{ tag }}</a></li>
+      {% endfor %}
     {% endfor %}
   </ul>
 </footer>

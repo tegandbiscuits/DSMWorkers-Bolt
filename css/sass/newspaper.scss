@@ -138,6 +138,10 @@
 			background-color: $menu-background;
 			text-transform: capitalize;
 			font-style: italic;
+
+			a {
+				color: black;
+			}
 		}
 	}
 }
