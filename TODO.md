@@ -13,3 +13,6 @@
 * Add writing for radical worker info
 * Make tags clickable to search for that tag
 * 404 page that says 'A spectre is haunting Des Moines. But that spectre is not here.'
+* Writing for the radical worker, and aims excerpt should be a block
+	* aims excerpt should also have a link to full aims
+* Listing needs paginaiton
