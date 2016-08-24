@@ -9,11 +9,13 @@
     {% setcontent featured = 'entries' where {'tags': 'featured'} returnsingle %}
 
     <div class="left-col">
-        <img src="{{ featured.image | thumbnail(1000, 1000) }}" alt="{{ featured.title }}">
+        <a href="{{ featured.link }}">
+            <img src="{{ featured.image | thumbnail(1000, 1000) }}" alt="{{ featured.title }}">
+        </a>
     </div>
 
     <div class="right-col">
-        <h2>{{ featured.title }}</h2>
+        <h2><a href="{{ featured.link }}">{{ featured.title }}</a></h2>
         <h3>{{ featured.user.displayname }} - {{ featured.datepublish | date('j F, Y') }}</h3>
         {{ featured.teaser }}
         <a href="{{ featured.link }}" class="continue-link">Continue Reading</a>
@@ -27,12 +29,14 @@
         {% for entry in entries | slice(0, 3) if entry.slug != featured.slug %}
             <div class="item">
                 {% if entry.image is not empty %}
-                    <img src="{{ entry.image | thumbnail(1000, 1000) }}" alt="{{ entry.title }}">
+                    <a href="{{ entry.link }}">
+                        <img src="{{ entry.image | thumbnail(1000, 1000) }}" alt="{{ entry.title }}">
+                    </a>
                 {% endif %}
-                <h2>{{ entry.title }}</h2>
+                <h2><a href="{{ entry.link }}">{{ entry.title }}</a></h2>
                 <h3>{{ entry.user.displayname }} - {{ entry.datepublish | date('j F, Y') }}</h3>
                 {{ entry.teaser }}
-                <a href="{{ entry.link }}">Continue Reading</a>
+                <a href="{{ entry.link }}" class="continue">Continue Reading</a>
             </div>
         {% endfor %}
     </div>
@@ -40,12 +44,14 @@
     <div class="post-list">
         {% for entry in entries | slice(3) if entry.slug != featured.slug %}
             <div class="post">
-                <h2>{{ entry.title }}</h2>
+                <h2><a href="{{ entry.link }}">{{ entry.title }}</a></h2>
                 <h3>{{ entry.user.displayname }} - {{ entry.datepublish | date('j F, Y') }}</h3>
 
                 {% if entry.image is not empty %}
                     <div class="post-excerpt image-excerpt">
-                        <img src="{{ entry.image | thumbnail(1000, 1000) }}" alt="{{ entry.title }}">
+                        <a href="{{ entry.link }}" class="image-link">
+                            <img src="{{ entry.image | thumbnail(1000, 1000) }}" alt="{{ entry.title }}">
+                        </a>
                 {% else %}
                     <div class="post-excerpt">
                 {% endif %}
@@ -67,12 +73,14 @@
     <div class="post-list">
         {% for entry in entries %}
             <div class="post">
-                <h2>{{ entry.title }}</h2>
+                <h2><a href="{{ entry.link }}">{{ entry.title }}</a></h2>
                 <h3>{{ entry.user.displayname }} - {{ entry.datepublish | date('j F, Y') }}</h3>
 
                 {% if entry.image is not empty %}
                     <div class="post-excerpt image-excerpt">
-                        <img src="{{ entry.image | thumbnail(1000, 1000) }}" alt="{{ entry.title }}">
+                        <a href="{{ entry.link }}" class="image-link">
+                            <img src="{{ entry.image | thumbnail(1000, 1000) }}" alt="{{ entry.title }}">
+                        </a>
                 {% else %}
                     <div class="post-excerpt">
                 {% endif %}

@@ -40,9 +40,13 @@
 		}
 
 		.image-excerpt {
-			img {
+			.image-link {
 				width: percentage(172/840);
 				margin-right: percentage(12/816);
+
+				img {
+					width: 100%;
+				}
 			}
 
 			.excerpt-text {

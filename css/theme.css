@@ -1,6 +1,12 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: "League Gothic";
   font-weight: 100; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-size: 100%;
+    font-style: normal;
+    color: black; }
+    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+      color: #404040; }
 
 h1 {
   font-size: 38px; }
@@ -188,7 +194,7 @@ dl {
     .three-item-container .item p {
       padding-left: 8px;
       padding-right: 8px; }
-    .three-item-container .item a {
+    .three-item-container .item .continue {
       display: block;
       margin-top: 8px;
       padding-right: 8px;
@@ -227,9 +233,11 @@ dl {
           display: block;
           margin-top: 20px;
           text-align: right; }
-    .post-list .post .image-excerpt img {
+    .post-list .post .image-excerpt .image-link {
       width: 20.47619%;
       margin-right: 1.47059%; }
+      .post-list .post .image-excerpt .image-link img {
+        width: 100%; }
     .post-list .post .image-excerpt .excerpt-text {
       width: 77.45098%; }
 
