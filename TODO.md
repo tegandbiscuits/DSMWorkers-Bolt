@@ -16,3 +16,5 @@
 * Writing for the radical worker, and aims excerpt should be a block
 	* aims excerpt should also have a link to full aims
 * Listing needs paginaiton
+* Move sass to sass dir
+* Add html tags allowed when I go through that
