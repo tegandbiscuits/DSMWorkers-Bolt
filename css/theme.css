@@ -351,12 +351,10 @@ hr {
       margin-left: 0.71429%;
       margin-right: 0.71429%;
       font-family: "League Gothic";
-      font-weight: 100;
       font-size: 16px;
       line-height: 1.5em;
       color: white; }
       #page-footer .container .left h4, #page-footer .container .center h4, #page-footer .container .right h4 {
-        font-weight: 100;
         font-size: 14px; }
     #page-footer .container .left address {
       font-style: normal;
