@@ -18,3 +18,4 @@
 * Listing needs paginaiton
 * Move sass to sass dir
 * Add html tags allowed when I go through that
+* Make images with float in page use js to use percentages (at least at small sizes)
