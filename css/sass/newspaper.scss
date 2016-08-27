@@ -100,11 +100,6 @@
 }
 
 .post {
-	width: percentage(816/1000);
-	max-width: 816px;
-	margin-left: auto;
-	margin-right: auto;
-
 	.byline {
 		margin-bottom: 40px;
 
@@ -119,17 +114,12 @@
 		}
 	}
 
-	img {
+	.head-image {
 		width: percentage(448/816);
 		margin-left: auto;
 		margin-right: auto;
-		margin-bottom: 25px;
+		margin-bottom: 24px;
 		display: block;
-	}
-
-	p {
-		margin-top: 12px;
-		margin-bottom: 12px;
 	}
 
 	.post-footer {

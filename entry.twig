@@ -1,14 +1,14 @@
 {{ include('partials/_head.twig') }}
 
-<article class="post">
+<article class="post page-body">
   <header class="byline">
     <h1 class="page-title">{{ record.title }}</h1>
     <h2>{{ record.user.displayname }} - {{ record.datepublish | date('j F, Y') }}</h2>
-  </header>
 
-  {% if record.image is not empty%}
-    <img src="{{ record.image | thumbnail(1000, 1000) }}" alt="{{ record.title }}">
-  {% endif %}
+    {% if record.image is not empty%}
+      <img class="head-image"src="{{ record.image | thumbnail(1000, 1000) }}" alt="{{ record.title }}">
+    {% endif %}
+  </header>
 
   {{ record.body }}
 
