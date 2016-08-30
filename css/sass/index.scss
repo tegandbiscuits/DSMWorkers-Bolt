@@ -19,7 +19,7 @@
 
 #aims {
     width: 100%;
-    margin-top: 40px;
+    margin-top: em(40);
     display: table;
 
     .aim-image {
@@ -37,23 +37,23 @@
         background-color: $red;
         
         .aims-list-content {
-            padding: 12px;
+            padding: em(12);
 
             h2 {
-                margin-bottom: 8px;
+                margin-bottom: em(8, 30);
                 color: black;
             }
 
             ol {
-                padding-left: 16px;
+                padding-left: em(16);
                 color: white;
-                line-height: 28px;
+                line-height: em(28);
             }
         }
     }
 }
 
 #projects {
-    margin-top: 70px;
+    margin-top: em(70);
 }
 

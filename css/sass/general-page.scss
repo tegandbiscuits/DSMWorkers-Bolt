@@ -5,49 +5,49 @@
 	margin-right: auto;
 
 	p {
-		margin-top: 12px;
-		margin-bottom: 12px;
+		margin-top: em(12);
+		margin-bottom: em(12);
 	}
 
 	img {
 		width: 100%;
-		margin-left: 12px;
-		margin-right: 12px;
-		margin-top: 4px;
-		margin-bottom: 24px;
+		margin-left: em(12, 14);
+		margin-right: em(12, 14);
+		margin-top: em(4, 14);
+		margin-bottom: em(24, 14);
 	}
 
 	blockquote {
 		width: percentage(448/816);
 		margin-left: auto;
 		margin-right: auto;
-		border-left: 6px solid $light-grey;
-		padding-left: 8px;
-		padding-top: 1px;
-		padding-bottom: 1px;
+		border-left: em(6) solid $light-grey;
+		padding-left: em(8);
+		padding-top: em(1);
+		padding-bottom: em(1);
 		color: darken($light-grey, 10);
 	}
 
 	dl {
-		margin-top: 20px;
+		margin-top: em(20);
 
 		dt {
 			font-weight: 600;
 		}
 
 		dd {
-			margin-left: 20px;
+			padding-left: em(20);
 		}
 	}
 
-	ol {
-		margin-top: 20px;
-		margin-bottom: 20px;
+	ol, ul {
+		margin-top: em(20);
+		margin-bottom: em(20);
 
 		li {
-			margin-top: 15px;
+			margin-top: em(15, 14);
 
-			ol {
+			ol, ul {
 				margin-top: 0;
 
 				li {
@@ -63,16 +63,16 @@
 	}
 
 	table {
-		border: solid 1px black;
+		border: solid em(1) black;
 
 		th, td {
-			border: solid 1px black;
+			border: solid em(1) black;
 		}
 	}
 }
 
 .two-column-container {
-	margin-top: 60px;
+	margin-top: em(60);
 	margin-left: auto;
 	margin-right: auto;
 	width: percentage(816/1000);
@@ -84,9 +84,11 @@
 	.left-col {
 		width: percentage(408/816);
 
-		img {
-			width: 100%;
-			margin-bottom: 30px;
+		a {
+			img {
+				width: 100%;
+				margin-bottom: em(30, 14);
+			}
 		}
 	}
 
@@ -100,7 +102,7 @@
 
 		.continue-link {
 			display: block;
-			margin-top: 8px;
+			margin-top: em(8, 14);
 			text-align: right;
 		}
 	}
@@ -109,14 +111,14 @@
 .three-item-container {
     margin-left: auto;
     margin-right: auto;
-    width: percentage(840/1000);
+		width: percentage(840/1000);
     max-width: 840px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
     .item {
-        width: percentage(264/840);
+				width: percentage(264/840);
         margin-left: percentage(6/840);
         margin-right: percentage(6/840);
 
@@ -125,15 +127,15 @@
         }
 
 				p {
-					padding-left: 8px;
-					padding-right: 8px;
+					padding-left: em(8, 14);
+					padding-right: em(8, 14);
 				}
 
         .continue {
-            display: block;
-            margin-top: 8px;
-						padding-right: 8px;
-            text-align: right;
+						display: block;
+						margin-top: em(8, 14);
+						padding-right: em(8, 14);
+						text-align: right;
         }
     }
 }

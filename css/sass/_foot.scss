@@ -1,8 +1,8 @@
 #page-footer {
 	background-color: $grey;
-	margin-top: 60px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	margin-top: em(60);
+	padding-top: em(30);
+	padding-bottom: em(30);
 
 	.container {
 		max-width: 840px;
@@ -27,31 +27,39 @@
 			margin-left: percentage(6/840);
 			margin-right: percentage(6/840);
 			font-family: $sans-font;
-			font-size: 16px;
+			font-size: em(18);
 			line-height: 1.5em;
 			color: white;
 
 			h4 {
-				font-size: 14px;
+				font-size: em(18, 18);
+			}
+
+			a {
+				font-style: normal;
+
+				&:hover {
+					color: darken(white, 15);
+				}
 			}
 		}
 
 		.left {
 			address {
 				font-style: normal;
-				font-size: 14px;
+				font-size: em(18, 18);
 			}
 
 			.social {
 				display: block;
-				margin-top: 5px;
+				margin-top: em(5, 18);
 
 				.facebook {
-					margin-right: 5px;
+					margin-right: em(5, 18);
 				}
 
 				.twitter {
-					margin-left: 5px;
+					margin-left: em(5, 18);
 				}
 			}
 		}
@@ -66,14 +74,7 @@
 
 				li {
 					text-align: right;
-
-					a {
-						font-style: normal;
-
-						&:hover {
-							color: darken(white, 15);
-						}
-					}
+					font-size: em(18, 18);
 				}
 			}
 		}

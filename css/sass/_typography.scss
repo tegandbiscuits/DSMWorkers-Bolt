@@ -14,32 +14,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 38px;
+	font-size: em(38);
 }
 
 h2 {
-	font-size: 30px;
+	font-size: em(30);
 }
 
 h3 {
-	font-size: 24px;
+	font-size: em(24);
 }
 
 h4 {
-	font-size: 19px;
+	font-size: em(19);
 }
 
 h5 {
-	font-size: 15px;
+	font-size: em(15);
 }
 
 h6 {
-	font-size: 12px;
+	font-size: em(12);
 }
 
 p {
 	font-family: $serif-font;
-	font-size: 14px;
+	font-size: em(14);
 	text-align: justify;
 	
 	a {
@@ -49,7 +49,7 @@ p {
 
 a {
 	font-family: $sans-font;
-	font-size: 14px;
+	font-size: em(14);
 	font-weight: 100;
 	font-style: italic;
 	color: $blue;
@@ -63,24 +63,25 @@ a {
 
 li {
 	font-family: $serif-font;
-	font-size: 14px;
+	font-size: em(14);
 	text-align: justify;
-	margin-left: 16px;
+	margin-left: em(16);
 }
 
 dl {
 	font-family: $serif-font;
-	font-size: 14px;
+	font-size: em(14);
 	text-align: justify;
 }
 
 .page-title {
-	margin-top: 50px;
-	margin-bottom: 15px;
+	// this em context is from h1 font-size
+	margin-top: em(50, 38);
+	margin-bottom: em(15, 38);
 	text-align: center;
 }
 
 hr {
-	border-top: solid $light-grey 4px;
+	border-top: solid $light-grey em(4);
 }
 
