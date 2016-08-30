@@ -33,4 +33,20 @@
 			}
 		}
 	}
+
+	#menu-button {
+		display: none;
+		margin: 7px;
+		padding: 5px;
+		font-family: $sans-font;
+		font-size: 24px;
+		border: 2px solid $grey;
+		border-radius: 4px;
+		// grey is set to the background color when the menu is active
+		// i.e. when both this button and the list are visible
+
+		&:hover {
+			background-color: darken($menu-background, 8);
+		}
+	}
 }

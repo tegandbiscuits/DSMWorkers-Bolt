@@ -78,6 +78,7 @@
 	width: percentage(816/1000);
 	max-width: 816px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 
 	.left-col {

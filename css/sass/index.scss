@@ -35,18 +35,18 @@
         width: percentage(552/1000);
         display: table-cell;
         background-color: $red;
-        padding: 12px;
         
-        h2 {
-            margin-bottom: 8px;
-            color: black;
-        }
+        .aims-list-content {
+            padding: 12px;
 
-        ol {
-            padding-left: 16px;
-            color: white;
-            
-            li {
+            h2 {
+                margin-bottom: 8px;
+                color: black;
+            }
+
+            ol {
+                padding-left: 16px;
+                color: white;
                 line-height: 28px;
             }
         }
