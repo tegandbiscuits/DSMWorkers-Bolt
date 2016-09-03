@@ -1,5 +1,10 @@
+@media (min-width: 1921px) {
+	#hero {
+		background-image: url(/theme/dsmworkers/css/Des-Moines-Hero-Full.jpg);
+	}
+}
 @media (max-width: 900px) {
-	/* collapse menu */
+	/* Collapse menu */
 	#menu {
 		#menu-button {
 			display: inline-block;
@@ -18,11 +23,22 @@
 			}
 		}
 	}
-	/* resize hero image */
+
+	/* Resize hero image */
+	#hero {
+    background-image: url(/theme/dsmworkers/css/Des-Moines-Hero-900.jpg);
+	}
+
+	/* Resize aims image */
+	#aims {
+		.aim-image {
+			background-image: url(/theme/dsmworkers/css/Evictions-March-900.jpg);
+		}
+	}
 }
 
 @media (max-width: 700px) {
-	/* item in three column row has own row */
+	/* Items in three column row have own row */
 	.three-item-container {
 		.item {
 			width: 100%;
@@ -40,7 +56,7 @@
 		}
 	}
 
-	/* image in aims has own row */
+	/* Aims items have own row */
 	#aims {
 		display: block;
 
@@ -48,6 +64,7 @@
 			display: block;
 			width: 100%;
 			height: em(200);
+			background-image: url(/theme/dsmworkers/css/Evictions-March-700.jpg);
 		}
 
 		.aim-list {
@@ -56,7 +73,7 @@
 		}
 	}
 
-	/* single projects are one colunn (need to add a class for this) */
+	/* Single projects are one column */
 	#project-body {
 		.left-col {
 			width: 100%;
@@ -67,11 +84,15 @@
 			width: 100%;
 		}
 	}
-	/* resize hero image */
+
+	/* Resize hero image */
+	#hero {
+    background-image: url(/theme/dsmworkers/css/Des-Moines-Hero-700.jpg);
+	}
 }
 
 @media (max-width: 500px) {
-	/* two column item has own row */
+	/* Each item in two column container have own row */
 	.two-column-container {
 		.left-col {
 			width: 100%;
@@ -100,6 +121,7 @@
 		}
 	}
 
+	/* Post list formattin */
 	#posts {
 		margin-top: em(20);
 	}
@@ -119,7 +141,7 @@
 		}
 	}
 
-	/* each section in footer is own its own row */
+	/* Each section in footer has own row */
 	#page-footer {
 		padding-top: em(15);
 		padding-bottom: em(15);
@@ -144,5 +166,16 @@
 			}
 		}
 	}
-	/* resize hero image */
+
+	/* Resize hero image */
+	#hero {
+    background-image: url(/theme/dsmworkers/css/Des-Moines-Hero-500.jpg);
+	}
+
+	/* Resize aims image */
+	#aims {
+		.aim-image {
+			background-image: url(/theme/dsmworkers/css/Evictions-March-500.jpg);
+		}	
+	}
 }

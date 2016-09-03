@@ -3,11 +3,6 @@
 * Set maximum widths for things that are not full width
 	* (~1200px probably)
 * Figure the maximum for images, and use that instead of 1000x1000
-	* 1200 > x < 1920 should get hero image of 1920 width
-	* x > 1920 should get full image
-	* x < 900 gets 900 width
-	* x < 700 gets 700 width
-	* x < 500 gets 500 width
 * Projects list should maintain 264x200 or another more common aspect ratio
 * Fonts need to be embedded
 * Set one of the font families as the default font

@@ -104,7 +104,7 @@ hr {
 #hero {
   text-align: center;
   height: 30vw;
-  background-image: url(/theme/dsmworkers/css/Des-Moines-Hero.png);
+  background-image: url(/theme/dsmworkers/css/Des-Moines-Hero-1920.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat; }
   #hero img {
@@ -122,7 +122,7 @@ hr {
   #aims .aim-image {
     width: 44.8%;
     display: table-cell;
-    background-image: url(/theme/dsmworkers/css/Evictions-March.jpg);
+    background-image: url(/theme/dsmworkers/css/Evictions-March-1920.jpg);
     background-size: cover;
     background-position: 50% 25%;
     background-repeat: no-repeat; }
@@ -388,8 +388,11 @@ hr {
         text-align: right;
         font-size: 1em; }
 
+@media (min-width: 1921px) {
+  #hero {
+    background-image: url(/theme/dsmworkers/css/Des-Moines-Hero-Full.jpg); } }
 @media (max-width: 900px) {
-  /* collapse menu */
+  /* Collapse menu */
   #menu #menu-button {
     display: inline-block; }
   #menu ul {
@@ -402,9 +405,15 @@ hr {
       height: 3em;
       border-top: 0.07143em solid #4F4F4F; }
 
-  /* resize hero image */ }
+  /* Resize hero image */
+  #hero {
+    background-image: url(/theme/dsmworkers/css/Des-Moines-Hero-900.jpg); }
+
+  /* Resize aims image */
+  #aims .aim-image {
+    background-image: url(/theme/dsmworkers/css/Evictions-March-900.jpg); } }
 @media (max-width: 700px) {
-  /* item in three column row has own row */
+  /* Items in three column row have own row */
   .three-item-container .item {
     width: 100%;
     margin-left: 0;
@@ -417,27 +426,30 @@ hr {
       margin-right: auto;
       margin-bottom: 0.71429em; }
 
-  /* image in aims has own row */
+  /* Aims items have own row */
   #aims {
     display: block; }
     #aims .aim-image {
       display: block;
       width: 100%;
-      height: 12.5em; }
+      height: 12.5em;
+      background-image: url(/theme/dsmworkers/css/Evictions-March-700.jpg); }
     #aims .aim-list {
       display: block;
       width: 100%; }
 
-  /* single projects are one colunn (need to add a class for this) */
+  /* Single projects are one column */
   #project-body .left-col {
     width: 100%; }
   #project-body .right-col {
     margin-top: 1.25em;
     width: 100%; }
 
-  /* resize hero image */ }
+  /* Resize hero image */
+  #hero {
+    background-image: url(/theme/dsmworkers/css/Des-Moines-Hero-700.jpg); } }
 @media (max-width: 500px) {
-  /* two column item has own row */
+  /* Each item in two column container have own row */
   .two-column-container .left-col {
     width: 100%; }
     .two-column-container .left-col a img {
@@ -452,6 +464,7 @@ hr {
   #project-body .left-col img {
     width: 100%; }
 
+  /* Post list formattin */
   #posts {
     margin-top: 1.25em; }
 
@@ -464,7 +477,7 @@ hr {
   .page-body .head-image {
     width: 100%; }
 
-  /* each section in footer is own its own row */
+  /* Each section in footer has own row */
   #page-footer {
     padding-top: 0.9375em;
     padding-bottom: 0.9375em; }
@@ -477,7 +490,13 @@ hr {
     #page-footer .container .right ul li {
       text-align: center; }
 
-  /* resize hero image */ }
+  /* Resize hero image */
+  #hero {
+    background-image: url(/theme/dsmworkers/css/Des-Moines-Hero-500.jpg); }
+
+  /* Resize aims image */
+  #aims .aim-image {
+    background-image: url(/theme/dsmworkers/css/Evictions-March-500.jpg); } }
 * {
   margin: 0;
   padding: 0;
