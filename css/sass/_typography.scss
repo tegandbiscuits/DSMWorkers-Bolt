@@ -38,7 +38,6 @@ h6 {
 }
 
 p {
-	font-family: $serif-font;
 	font-size: em(14);
 	text-align: justify;
 	
@@ -62,14 +61,12 @@ a {
 }
 
 li {
-	font-family: $serif-font;
 	font-size: em(14);
 	text-align: justify;
 	margin-left: em(16);
 }
 
 dl {
-	font-family: $serif-font;
 	font-size: em(14);
 	text-align: justify;
 }
@@ -82,5 +79,9 @@ dl {
 
 hr {
 	border-top: solid $light-grey em(4);
+}
+
+pre, code {
+	font-family: monospace;
 }
 

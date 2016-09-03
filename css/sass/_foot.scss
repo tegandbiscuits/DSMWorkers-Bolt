@@ -21,19 +21,18 @@
 
 		.center {
 			width: percentage(448/840);
+
+			h4 {
+				font-size: em(18, 18);
+			}
 		}
 
 		.left, .center, .right {
 			margin-left: percentage(6/840);
 			margin-right: percentage(6/840);
-			font-family: $sans-font;
 			font-size: em(18);
 			line-height: 1.5em;
 			color: white;
-
-			h4 {
-				font-size: em(18, 18);
-			}
 
 			a {
 				font-style: normal;
@@ -46,6 +45,7 @@
 
 		.left {
 			address {
+				font-family: $sans-font;
 				font-style: normal;
 				font-size: em(18, 18);
 			}

@@ -2,6 +2,7 @@
 	@return #{$pixels/$context}em;
 }
 
+@import "_fonts.scss";
 @import "_flex.scss";
 @import "_variables.scss";
 @import "_typography.scss";
@@ -10,6 +11,7 @@
 @import "general-page.scss";
 @import "projects.scss";
 @import "newspaper.scss";
+@import "_share-buttons.scss";
 @import "_foot.scss";
 @import "_media_queries.scss";
 
@@ -21,5 +23,6 @@
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
+	font-family: $serif-font;
 }
 

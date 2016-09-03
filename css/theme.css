@@ -1,5 +1,30 @@
-h1, h2, h3, h4, h5, h6 {
+@font-face {
   font-family: "League Gothic";
+  src: url("/theme/dsmworkers/css/fonts/leaguegothic-regular.woff2") format("woff2"), url("/theme/dsmworkers/css/fonts/leaguegothic-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "League Gothic";
+  src: url("/theme/dsmworkers/css/fonts/leaguegothic-italic.woff2") format("woff2"), url("/theme/dsmworkers/css/fonts/leaguegothic-italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url("/theme/dsmworkers/css/fonts/librebaskerville-regular.woff2") format("woff2"), url("/theme/dsmworkers/css/fonts/librebaskerville-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url("/theme/dsmworkers/css/fonts/librebaskerville-italic.woff2") format("woff2"), url("/theme/dsmworkers/css/fonts/librebaskerville-italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url("/theme/dsmworkers/css/fonts/librebaskerville-bold.woff2") format("woff2"), url("/theme/dsmworkers/css/fonts/librebaskerville-bold.woff") format("woff");
+  font-weight: 600;
+  font-style: bold; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "League Gothic", Impact, sans-serif;
   font-weight: 100; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     font-size: 100%;
@@ -27,14 +52,13 @@ h6 {
   font-size: 0.75em; }
 
 p {
-  font-family: "Libre Baskerville";
   font-size: 0.875em;
   text-align: justify; }
   p a {
-    font-family: "Libre Baskerville"; }
+    font-family: "LibreBaskerville", Baskerville, Georgia, serif; }
 
 a {
-  font-family: "League Gothic";
+  font-family: "League Gothic", Impact, sans-serif;
   font-size: 0.875em;
   font-weight: 100;
   font-style: italic;
@@ -45,13 +69,11 @@ a {
     color: #0b8ad9; }
 
 li {
-  font-family: "Libre Baskerville";
   font-size: 0.875em;
   text-align: justify;
   margin-left: 1em; }
 
 dl {
-  font-family: "Libre Baskerville";
   font-size: 0.875em;
   text-align: justify; }
 
@@ -62,6 +84,9 @@ dl {
 
 hr {
   border-top: solid #7F7F7F 0.25em; }
+
+pre, code {
+  font-family: monospace; }
 
 #menu {
   width: 100%;
@@ -78,7 +103,7 @@ hr {
       height: 4.28571em;
       margin-left: 5%;
       margin-right: 5%;
-      font-family: "League Gothic";
+      font-family: "League Gothic", Impact, sans-serif;
       text-align: center;
       line-height: 4.28571em; }
       #menu ul li a {
@@ -94,7 +119,7 @@ hr {
     display: none;
     margin: 0.29167em;
     padding: 0.20833em;
-    font-family: "League Gothic";
+    font-family: "League Gothic", Impact, sans-serif;
     font-size: 1.5em;
     border: 0.08333em solid #4F4F4F;
     border-radius: 0.16667em; }
@@ -366,6 +391,46 @@ hr {
       .post .post-footer ul li a {
         color: black; }
 
+.resp-sharing-button__link, .resp-sharing-button__icon {
+  display: inline-block; }
+
+.resp-sharing-button {
+  font-family: "League Gothic", Impact, sans-serif; }
+
+.resp-sharing-button__link {
+  font-style: normal;
+  text-decoration: none;
+  color: #fff; }
+
+.resp-sharing-button__link:hover {
+  color: #fff; }
+
+.resp-sharing-button {
+  border-radius: 5px;
+  transition: 25ms ease-out;
+  padding: 0.5em 0.75em; }
+
+.resp-sharing-button__icon svg {
+  width: 1em;
+  height: 1em; }
+
+.resp-sharing-button__icon--solid {
+  fill: #fff;
+  stroke: none;
+  margin-right: 0.4em; }
+
+.resp-sharing-button--twitter {
+  background-color: #55acee; }
+
+.resp-sharing-button--twitter:hover {
+  background-color: #2795e9; }
+
+.resp-sharing-button--facebook {
+  background-color: #3b5998; }
+
+.resp-sharing-button--facebook:hover {
+  background-color: #2d4373; }
+
 #page-footer {
   background-color: #4F4F4F;
   margin-top: 3.75em;
@@ -394,20 +459,20 @@ hr {
       width: 20.71429%; }
     #page-footer .container .center {
       width: 53.33333%; }
+      #page-footer .container .center h4 {
+        font-size: 1em; }
     #page-footer .container .left, #page-footer .container .center, #page-footer .container .right {
       margin-left: 0.71429%;
       margin-right: 0.71429%;
-      font-family: "League Gothic";
       font-size: 1.125em;
       line-height: 1.5em;
       color: white; }
-      #page-footer .container .left h4, #page-footer .container .center h4, #page-footer .container .right h4 {
-        font-size: 1em; }
       #page-footer .container .left a, #page-footer .container .center a, #page-footer .container .right a {
         font-style: normal; }
         #page-footer .container .left a:hover, #page-footer .container .center a:hover, #page-footer .container .right a:hover {
           color: #d9d9d9; }
     #page-footer .container .left address {
+      font-family: "League Gothic", Impact, sans-serif;
       font-style: normal;
       font-size: 1em; }
     #page-footer .container .left .social {
@@ -541,6 +606,7 @@ hr {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+  font-family: "LibreBaskerville", Baskerville, Georgia, serif; }
 
 /*# sourceMappingURL=theme.css.map */
