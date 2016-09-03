@@ -236,7 +236,7 @@ pre, code {
   justify-content: space-between; }
   .two-column-container .left-col {
     width: 50%; }
-    .two-column-container .left-col a img {
+    .two-column-container .left-col img {
       width: 100%;
       margin-bottom: 2.14286em; }
   .two-column-container .right-col {
