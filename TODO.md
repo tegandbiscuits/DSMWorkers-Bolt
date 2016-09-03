@@ -15,5 +15,4 @@
 * Possibly use js to add caption from alt text
 * Make viewport be the size
 * page.twig should have if record image as well
-* Add -webkit and -moz and -ms prefix for flex
 * Make the title more descriptive

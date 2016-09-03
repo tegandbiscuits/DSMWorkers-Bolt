@@ -25,7 +25,7 @@
 		margin-bottom: em(30);
 
 		.post-excerpt {
-			display: flex;
+			@include flexbox;
 
 			.excerpt-text {
 				padding-left: em(8);

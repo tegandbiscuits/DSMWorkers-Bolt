@@ -195,8 +195,19 @@ hr {
   margin-right: auto;
   width: 81.6%;
   max-width: 816px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
   justify-content: space-between; }
   .two-column-container .left-col {
     width: 50%; }
@@ -218,8 +229,19 @@ hr {
   margin-right: auto;
   width: 84%;
   max-width: 840px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
   justify-content: center; }
   .three-item-container .item {
     width: 31.42857%;
@@ -260,6 +282,10 @@ hr {
   .post-list .post {
     margin-bottom: 1.875em; }
     .post-list .post .post-excerpt {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
       display: flex; }
       .post-list .post .post-excerpt .excerpt-text {
         padding-left: 0.5em;
@@ -348,8 +374,19 @@ hr {
   #page-footer .container {
     max-width: 840px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
     justify-content: center; }
     #page-footer .container a {
       color: white; }
