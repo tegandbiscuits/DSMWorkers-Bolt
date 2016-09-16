@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ record.title }} | {{ app.config.get('general/sitename') }}</title>
+
+	<style>
+		* {
+			font-family: sans-serif;
+			text-align: center;
+			margin: auto;
+		}
+		h1 {
+			margin-bottom: 30px;
+		}
+		p {
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1>{{ record.title }}</h1>
+	{{ record.content }}
+</body>
+</html>
