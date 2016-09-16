@@ -64,6 +64,7 @@ If you would like to use this theme as a base here is the general config I have 
 ###Config Notes
 * You can use `sitename` and `payoff`
 * Set `homepage_template` to `index.twig`
+* `homepage` should be set to `/` so record is null and titles work right
 * All of the default htmlcleaner tags (sans code and tt) look consistent
 
 #License

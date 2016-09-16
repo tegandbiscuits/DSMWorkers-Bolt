@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>{{ app.config.get('general/sitename') }}</title>
+    {% if record.title %}
+        <title>{{ record.title }} | {{ app.config.get('general/sitename') }}</title>
+    {% else %}
+        <title>{{ app.config.get('general/sitename') }}</title>
+    {% endif %}
 
     <link rel="stylesheet" href="{{ paths.theme }}css/theme.css">
 </head>
