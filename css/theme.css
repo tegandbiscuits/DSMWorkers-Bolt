@@ -92,17 +92,29 @@ pre, code {
   width: 100%;
   background: #E6E7E8; }
   #menu ul {
-    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: none;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    list-style: none;
     text-align: center; }
     #menu ul li {
-      display: inline-block;
       width: 8%;
       height: 4.28571em;
-      margin-left: 5%;
-      margin-right: 5%;
+      margin: 0;
       font-family: "League Gothic", Impact, sans-serif;
       text-align: center;
       line-height: 4.28571em; }
