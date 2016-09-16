@@ -15,7 +15,7 @@
 }
 
 .post-list {
-	max-width: 816px;
+	max-width: $max-width;
 	width: percentage(816/1000);
 	margin-left: auto;
 	margin-right: auto;
@@ -57,7 +57,7 @@
 }
 
 .pagination {
-	max-width: 816px;
+	max-width: $max-width;
 	width: percentage(816/1000);
 	margin-left: auto;
 	margin-right: auto;
@@ -85,7 +85,7 @@
 
 .bottom-notes {
 	width: percentage(816/1000);
-	max-width: 816px;
+	max-width: $max-width;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: em(60);

@@ -1,5 +1,5 @@
 .page-body {
-	max-width: 816px;
+	max-width: $max-width;
 	width: percentage(816/1000);
 	margin-left: auto;
 	margin-right: auto;
@@ -76,7 +76,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: percentage(816/1000);
-	max-width: 816px;
+	max-width: $max-width;
 	@include flexbox;
 	@include flex-wrap(wrap);
 	@include justify-content(space-between);
@@ -110,7 +110,7 @@
     margin-left: auto;
     margin-right: auto;
 		width: percentage(840/1000);
-    max-width: 840px;
+    max-width: $max-width;
 		@include flexbox;
 		@include flex-wrap(wrap);
 		@include justify-content(center);

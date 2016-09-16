@@ -169,7 +169,7 @@ pre, code {
   margin-top: 4.375em; }
 
 .page-body {
-  max-width: 816px;
+  max-width: 1000px;
   width: 81.6%;
   margin-left: auto;
   margin-right: auto; }
@@ -219,7 +219,7 @@ pre, code {
   margin-left: auto;
   margin-right: auto;
   width: 81.6%;
-  max-width: 816px;
+  max-width: 1000px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -253,7 +253,7 @@ pre, code {
   margin-left: auto;
   margin-right: auto;
   width: 84%;
-  max-width: 840px;
+  max-width: 1000px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -299,7 +299,7 @@ pre, code {
     font-size: 1.5em; }
 
 .post-list {
-  max-width: 816px;
+  max-width: 1000px;
   width: 81.6%;
   margin-left: auto;
   margin-right: auto;
@@ -328,7 +328,7 @@ pre, code {
       width: 77.45098%; }
 
 .pagination {
-  max-width: 816px;
+  max-width: 1000px;
   width: 81.6%;
   margin-left: auto;
   margin-right: auto;
@@ -347,7 +347,7 @@ pre, code {
 
 .bottom-notes {
   width: 81.6%;
-  max-width: 816px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3.75em;
@@ -437,7 +437,7 @@ pre, code {
   padding-top: 1.875em;
   padding-bottom: 1.875em; }
   #page-footer .container {
-    max-width: 840px;
+    max-width: 1000px;
     margin: 0 auto;
     display: -webkit-box;
     display: -webkit-flex;

@@ -5,7 +5,7 @@
 	padding-bottom: em(30);
 
 	.container {
-		max-width: 840px;
+		max-width: $max-width;
 		margin: 0 auto;
 		@include flexbox;
 		@include flex-wrap(wrap);

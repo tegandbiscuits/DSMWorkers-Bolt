@@ -1,7 +1,5 @@
 #TODO
 
-* Set maximum widths for things that are not full width
-	* (~1200px probably)
 * Figure the maximum for images, and use that instead of 1000x1000
 * Projects list should maintain 264x200 or another more common aspect ratio
 * 404 page that says 'A spectre is haunting Des Moines. But that spectre is not here.'
