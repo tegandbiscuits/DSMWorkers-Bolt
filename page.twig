@@ -1,9 +1,15 @@
 {{ include('partials/_head.twig') }}
 
-<h1 class="page-title">{{ record.title }}</h1>
+<article class="page-body">
+	<header>
+		<h1 class="page-title">{{ record.title }}</h1>
 
-<div class="page-body">
+		{% if record.image is not empty%}
+			<img class="head-image"src="{{ record.image | thumbnail(1000, 1000) }}" alt="{{ record.title }}">
+    {% endif %}
+	</header>
+
 	{{ record.body }}
-</div>
+</article>
 
 {{ include('partials/_foot.twig') }}

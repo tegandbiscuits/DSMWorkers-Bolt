@@ -225,6 +225,13 @@ pre, code {
     border: solid 0.0625em black; }
     .page-body table th, .page-body table td {
       border: solid 0.0625em black; }
+  .page-body .head-image {
+    width: 54.90196%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.875em;
+    margin-top: 1.25em;
+    display: block; }
 
 .two-column-container {
   margin-top: 3.75em;
@@ -374,13 +381,6 @@ pre, code {
   text-align: center;
   font-size: 1.5em;
   color: #7F7F7F; }
-.post .head-image {
-  width: 54.90196%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.875em;
-  margin-top: 1.25em;
-  display: block; }
 .post .post-footer {
   margin-left: auto;
   margin-right: auto;
